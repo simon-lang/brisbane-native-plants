@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/brisbane-native-plants/static/css/main.1ccccc08.chunk.css",
+    "main.js": "/brisbane-native-plants/static/js/main.a91bb89e.chunk.js",
+    "main.js.map": "/brisbane-native-plants/static/js/main.a91bb89e.chunk.js.map",
+    "runtime-main.js": "/brisbane-native-plants/static/js/runtime-main.e23bfbe1.js",
+    "runtime-main.js.map": "/brisbane-native-plants/static/js/runtime-main.e23bfbe1.js.map",
+    "static/js/2.253b6084.chunk.js": "/brisbane-native-plants/static/js/2.253b6084.chunk.js",
+    "static/js/2.253b6084.chunk.js.map": "/brisbane-native-plants/static/js/2.253b6084.chunk.js.map",
+    "static/js/3.e2429aa9.chunk.js": "/brisbane-native-plants/static/js/3.e2429aa9.chunk.js",
+    "static/js/3.e2429aa9.chunk.js.map": "/brisbane-native-plants/static/js/3.e2429aa9.chunk.js.map",
+    "index.html": "/brisbane-native-plants/index.html",
+    "static/css/main.1ccccc08.chunk.css.map": "/brisbane-native-plants/static/css/main.1ccccc08.chunk.css.map",
+    "static/js/2.253b6084.chunk.js.LICENSE.txt": "/brisbane-native-plants/static/js/2.253b6084.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e23bfbe1.js",
+    "static/js/2.253b6084.chunk.js",
+    "static/css/main.1ccccc08.chunk.css",
+    "static/js/main.a91bb89e.chunk.js"
+  ]
+}
