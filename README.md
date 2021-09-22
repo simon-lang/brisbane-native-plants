@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Brisbane Native Plants
+
+Brisbane City Council’s Free Native Plants program offers a range of plants to enable the community to cultivate a greener and more sustainable Brisbane. The native species provided through the program will help grow our city’s urban forest and support wildlife.
+
+This project is to provide a searchable UI with images for the plants available under this program.
+
+[Read more on the Brisbane City Council website](https://www.brisbane.qld.gov.au/clean-and-green/green-home-and-community/sustainable-gardening/free-native-plants-program)
+
+## Development
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
