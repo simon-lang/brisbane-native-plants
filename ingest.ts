@@ -21,11 +21,11 @@ const content = fs.readFileSync("./data.tsv", "utf8");
 
 const json = tsvToJson(content);
 
-json.forEach(d => {
-  const name = d.name.match(/\(.+\)/)[0].replace(/[\(\)]/g, '')
-  d.commonName = d.name.replace(/\(.+\)/g, '')
-  d.name = name
-})
+json.forEach((d) => {
+  const name = d.name.match(/\(.+\)/)[0].replace(/[\(\)]/g, "");
+  d.commonName = d.name.replace(/\(.+\)/g, "");
+  d.name = name;
+});
 
 const out = JSON.stringify(json, null, 2);
 
