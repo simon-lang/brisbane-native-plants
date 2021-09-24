@@ -60,7 +60,8 @@
     "name": "Lomandra sp.",
     "description": "Deep green, glossy, narrow strap leaves to one metre. Small yellow-cream flowers in spring and summer. Grow in a full sun to partial shade position.",
     "attracts": "Lizards, frogs",
-    "commonName": "Mat rush "
+    "commonName": "Mat rush ",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lomandra"
   },
   {
     "type": "Tufting plants and grasses",
@@ -84,175 +85,177 @@
     "commonName": "Guinea vine "
   },
   {
-    "type": "Small shrubs - 0.5 metres to two metres",
+    "type": "Small shrubs",
     "name": "Callistemon sp.",
     "description": "Fast growing, hardy, woody shrub that grows up to two metres that produces beautiful blooms in a variety of single colours in spring and summer and sometimes again in autumn. Plant in a moist, well-drained, sunny position. Regularly prune to encourage bushier growth and increased flower production. Great for containers, edging, rockeries, hedges and borders.",
     "attracts": "Birds, insects",
     "commonName": "Bottlebrush "
   },
   {
-    "type": "Small shrubs - 0.5 metres to two metres",
+    "type": "Small shrubs",
     "name": "Westringia sp.",
     "description": "Hardy, small, fast-growing, evergreen shrub that grows to 1m². Long flowering and suitable as a hedge or screening plant or for low maintenance gardens, exposed sites and coastal gardens. Suitable for container planting.",
     "attracts": "Birds, butterflies, insects",
     "commonName": "Coastal rosemary "
   },
   {
-    "type": "Small shrubs - 0.5 metres to two metres",
+    "type": "Small shrubs",
     "name": "Grevillea sp.",
     "description": "Showy, evergreen plants that grow to two metres with nectar-rich flowers. They produce a 'spider flower' in a variety of single colours throughout the year. Grevillea's do best in a sunny position with light, gritty, free-draining soil.",
     "attracts": "Birds, bees, butterflies",
     "commonName": "Grevillea "
   },
   {
-    "type": "Small shrubs - 0.5 metres to two metres",
+    "type": "Small shrubs",
     "name": "Banksia spinulosa",
     "description": "Hardy, evergreen shrub to two metres with bold flowing spikes in a variety of single colours. Flowers appear from autumn through to spring. Plant in an open, sunny position in well-drained soil. To encourage flower production and thicker foliage, cut flowering spikes and use in a floral display.",
     "attracts": "Birds",
     "commonName": "Hairpin banksia  - seasonal"
   },
   {
-    "type": "Small shrubs - 0.5 metres to two metres",
+    "type": "Small shrubs",
     "name": "Melaleuca linariifolia",
     "description": "A dense and compact shrub that grows to 1.5 metres with attractive, claret-coloured new growth and white flowers in summer. A great foliage plant for shrubberies or in a pot. Grows well in full sun or semi-shaded positions.",
     "attracts": "Birds, insects",
     "commonName": "Honey myrtle 'Claret Tops' "
   },
   {
-    "type": "Small shrubs - 0.5 metres to two metres",
+    "type": "Small shrubs",
     "name": "Melastoma affine",
     "description": "Hardy bushy shrub to two metres. Showy large pink/purple flower in summer. Prefers partial shade.",
     "attracts": "Birds, bees and insects",
     "commonName": "Native lasiandra "
   },
   {
-    "type": "Small shrubs - 0.5 metres to two metres",
+    "type": "Small shrubs",
     "name": "Leptospermum sp.",
     "description": "Attractive small shrub ranging in size from 80 centimetres up to two metres. Showy pink or white flowers in spring and autumn. Prefers moist well-drained soil in full sun or light shade. A useful feature plant for rockeries or over retaining walls.",
     "attracts": "Insects, bees",
+    "wikipedia": "https://en.wikipedia.org/wiki/Leptospermum",
     "commonName": "Tea tree "
   },
   {
-    "type": "Small shrubs - 0.5 metres to two metres",
+    "type": "Small shrubs",
     "name": "Melaleuca thymifolia",
     "description": "Small hardy shrub to 1m². Mauve claw type flowers occur in clusters and are borne during summer. Grows best in full sun with good drainage. Suitable for large pots or containers.",
     "attracts": "Insects",
     "commonName": "Thyme honey myrtle "
   },
   {
-    "type": "Medium shrubs - three to five metres",
+    "type": "Medium shrubs",
     "name": "Banksia sp.",
     "description": "Hardy evergreen shrubs with attractive foliage with bold single colour flowering spikes. Plant in an open sunny position in well-drained soil.",
     "attracts": "Birds",
     "commonName": "Banksia  - seasonal"
   },
   {
-    "type": "Medium shrubs - three to five metres",
+    "type": "Medium shrubs",
     "name": "Callistemon sp.",
     "description": "Hardy, woody shrub that grows up to five metres that produces beautiful blooms in a variety of single colours in spring and summer and sometimes again in autumn. Plant in a moist, well-drained, sunny position. Regularly prune to encourage bushier growth and increased flower production. Bottlebrushes make excellent screening plants and are quick growers.",
     "attracts": "Birds, insects",
     "commonName": "Bottlebrush "
   },
   {
-    "type": "Medium shrubs - three to five metres",
+    "type": "Medium shrubs",
     "name": "Leptospermum sp.",
     "description": "A bushy rounded shrub that grows to five metres. White flowers cover the shrub in spring. Prefers well drained soil in a sunny position. Ideal as a screen, hedge or windbreak.",
     "attracts": "Insects, bees",
+    "wikipedia": "https://en.wikipedia.org/wiki/Leptospermum",
     "commonName": "Tea tree "
   },
   {
-    "type": "Medium shrubs - three to five metres",
+    "type": "Medium shrubs",
     "name": "Syzgium sp.",
     "description": "Hardy evergreen plants to five metres with glossy, green leaves with fluffy, pom-pom, white flowers in spring and summer followed by red berries. Prefers a sunny position with well-drained soil. Lillypillies make excellent screens, windbreaks and hedges and can be pruned to size and shape.",
     "attracts": "Birds, bees, flying foxes",
     "commonName": "Lillypilly "
   },
   {
-    "type": "Medium shrubs - three to five metres",
+    "type": "Medium shrubs",
     "name": "Hovea acutifolia",
     "description": "A small to medium fast-growing shrub which is stunning in flower. Grows to four metres with masses of purple pea flowers from July to September. Best planted in a lightly shaded position in well-drained soil. Suitable as a windbreak, hedge or in a large pot or tub.",
     "attracts": "Birds, bees",
     "commonName": "Purple pea bush "
   },
   {
-    "type": "Medium shrubs - three to five metres",
+    "type": "Medium shrubs",
     "name": "Baekea virgata",
     "description": "Very hardy, bushy erect shrub that grows to 3.5 metres. Profuse small white flowers occur in clusters in spring and summer. Prefers a lightly shaded position in well-drained soil. Great for hedges or tubs.",
     "attracts": "Birds",
     "commonName": "Twiggy heath myrtle "
   },
   {
-    "type": "Medium shrubs - three to five metres",
+    "type": "Medium shrubs",
     "name": "Acacia fimbriata",
     "description": "A fast growing bushy small tree growing to 5 metres square. Dense yellow perfumed ball-shaped flowers appear in late winter and spring. Good hedge or screening plant and can be pruned to shape. Plant in full sun to a partial shade position. Hardy in most situations.",
     "attracts": "Birds, butterflies, bees",
     "commonName": "Brisbane wattle "
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Archontophoenix cunninghamiana",
     "description": "Medium-tall, fast growing palm to 20+ metres. Lilac flowers followed by bright red fruits December to May. Suited to well composted soil with ample water and in a frost free area. This is a self-cleaning palm.",
     "attracts": "Birds",
     "commonName": "Bangalow/piccabeen palm "
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Elaeocarpus reticulatus",
     "description": "Small, dense tree growing to eight metres. Masses of white or pink, small fringed, bell-shaped flowers are produced in summer. The flowers are followed by small blue fruits. Most soils are suitable and grow best in full sun to partial shade.",
     "attracts": "Birds",
     "commonName": "Blueberry ash "
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Callistemon sp.",
     "description": "Fast growing, hardy tree with beautiful blooms in a variety of single colours in spring and summer. Plant in a moist, well-drained sunny position.",
     "attracts": "Bird, insects",
     "commonName": "Bottlebrush "
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Xanthostemon chrysanthus",
     "description": "An attractive specimen tree up to eight metres. Showy, dense cluster of golden yellow flowers appear from summer to winter. Plant in full sun to part shade in well-drained soil. Suitable as a hedge, windbreak, screen, or feature tree.",
     "attracts": "Birds",
     "commonName": "Golden penda "
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Grevillea sp.",
     "description": "Showy evergreen plants with nectar-rich 'spider flowers' in a variety of single colours. Plant in a sunny location with light, gritty, free-draining soil.",
     "attracts": "Birds, bees, butterflies",
     "commonName": "Grevillea "
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Buckinghamia cellisima",
     "description": "Fast-growing evergreen tree that grows to eight metres. Striking, long, creamy-fragranced flowers from spring until autumn. Prefers moist, well-drained soil in full sun to semi shade.",
     "attracts": "Birds, bees",
     "commonName": "Ivory curl tree  -  seasonal"
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Backhousia citriodora",
     "description": "Great small feature tree to five metres. White flowers from summer to autumn. Leaves are lemon scented. Prefers moist, well-drained soil in semi shade. Ideal for hedges or mixed shrub bed.",
     "attracts": "Birds, butterflies, bees",
     "commonName": "Lemon scented myrtle "
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Syzgium sp.",
     "description": "Hardy, evergreen plants with glossy, green leaves with fluffy, pom-pom, white flowers in spring and summer followed by red berries. Prefers a sunny position with well-drained soil. Lillypillies make excellent screens, windbreaks and hedges and can be pruned to size and shape.",
     "attracts": "Birds, bees, flying foxes",
     "commonName": "Lillypilly "
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Harpulia pendula",
     "description": "A hardy, fast-growing, evergreen tree that grows up to 10 metres with attractive, pale green foliage. Large sprays of greenish-yellow, slightly fragrant flowers appear in summer followed by orange fruit. Requires open sunny position in a light to medium soil type. Excellent shade tree.",
     "attracts": "Birds, bees",
     "commonName": "Tulipwood  - seasonal"
   },
   {
-    "type": "Shade and feature trees - over five metres",
+    "type": "Shade and feature trees",
     "name": "Waterhousia floribunda",
     "description": "Hardy, evergreen tree that grows to 8m². Clusters of white flowers appear from spring to summer, followed by green, round fruits. Plant in a sunny open position in well-drained soil. Regular trimming will produce colourful, new growth and keep the plant bushy. Can be trimmed to shape and size. Ideal as a dense screen or windbreak, or stunning as a large container plant.",
     "attracts": "Birds, bees",

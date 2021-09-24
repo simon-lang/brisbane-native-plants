@@ -1,30 +1,36 @@
 // @format
 
-import "./App.css";
-import React from "react";
-import classNames from "classnames";
-import data from "./data.json";
-import { createGlobalState } from "react-hooks-global-state";
+import _ from 'lodash'
+import './App.css'
+import React, { useState } from 'react'
+import classNames from 'classnames'
+import data from './data.json'
+import { createGlobalState } from 'react-hooks-global-state'
+import About from './About'
+// import WorkIcon from '@mui/icons-material/Work'
 
 const initialState = {
   showTable: false,
-  searchTerm: "",
-};
-const { useGlobalState } = createGlobalState(initialState);
+  searchTerm: '',
+}
+const { useGlobalState } = createGlobalState(initialState)
 
 data.forEach((d, i) => {
-  d.index = i;
-});
+  d.index = i
+})
 
 function Hero() {
-  const [showTable, setShowTable] = useGlobalState("showTable");
+  const [showTable, setShowTable] = useGlobalState('showTable')
   const cta = () => {
-    setShowTable(true);
-    document.getElementById("SearchBar").scrollIntoView();
+    setShowTable(true)
+    document.getElementById('SearchBar').scrollIntoView()
     setTimeout(() => {
-      document.querySelector("#SearchBar input").select();
-    }, 10);
-  };
+      // sucks on mobile. in fact search sucks on mobile. disable?
+      if (window.innerWidth > 800) {
+        document.getElementById('search').select()
+      }
+    }, 100)
+  }
   return (
     <div>
       <main className="">
@@ -42,7 +48,7 @@ function Hero() {
             plant adds to our city's urban forest, supports our unique wildlife
             and makes Brisbane cleaner, greener and more sustainable.
           </p>
-          <div className="mt-5 sm:mt-8 sm:flex">
+          <div className="mt-5 sm:mt-8 sm:flex align-right">
             <div className="rounded-md shadow">
               <button
                 onClick={() => cta()}
@@ -55,6 +61,7 @@ function Hero() {
               <a
                 href="https://www.brisbane.qld.gov.au/clean-and-green/green-home-and-community/sustainable-gardening/free-native-plants-program"
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-4 md:text-lg md:px-10"
+                target="_blank"
               >
                 Learn More
               </a>
@@ -63,19 +70,33 @@ function Hero() {
         </div>
       </main>
     </div>
-  );
+  )
 }
 
 function SearchBar() {
-  const [, setSearchTerm] = useGlobalState("searchTerm");
+  const [, setSearchTerm] = useGlobalState('searchTerm')
+  const types = _.uniq(data.map((d) => d.type))
+  const typeFilters = {}
+  types.forEach((type) => {
+    typeFilters[type] = true
+  })
   const onChange = (e) => {
-    setSearchTerm(e.target.value);
-  };
+    setSearchTerm(e.target.value)
+  }
   const onChangeFilters = (e) => {
-    console.log("....");
-  };
+    console.log('....')
+  }
   return (
-    <div className="SearchBar p-4" id="SearchBar">
+    <div className="SearchBar p-4 sm:xhidden" id="SearchBar">
+      <div hidden>
+        {types.map((type) => (
+          <div className="xinline-block">
+            <label htmlFor="">
+              <input type="checkbox" checked={typeFilters[type]} /> {type}
+            </label>
+          </div>
+        ))}
+      </div>
       <div>
         <div className="mt-1 relative rounded-md shadow-sm">
           <input
@@ -99,64 +120,85 @@ function SearchBar() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function Card(props) {
-  const { type, name, commonName, description, attracts, index } = props.item;
+  const { type, name, commonName, description, attracts, index, wikipedia } =
+    props.item
   return (
-    <div className="border p-4 bg-white">
-      <div className="overflow-y-hidden" style={{ height: "16rem" }}>
-        <img
-          src={process.env.PUBLIC_URL + "/images/plants/" + index + ".jpg"}
-          alt={name}
-        />
+    <a
+      href={
+        wikipedia ||
+        'https://www.wikipedia.org/search-redirect.php?search=' + name
+      }
+      xtarget="_blank"
+    >
+      <div className="border p-4 bg-white hover:bg-gray-100 hover:border-gray-400">
+        <div className="overflow-y-hidden" style={{ height: '16rem' }}>
+          <img
+            src={process.env.PUBLIC_URL + '/images/plants/' + index + '.jpg'}
+            alt={name}
+          />
+        </div>
+        <div className="text-xl font-semibold">
+          {commonName}(<em className="italic">{name}</em>)
+        </div>
+        <div className="text-lg">{type}</div>
+        <div className="">
+          {description} Attracts {attracts}
+        </div>
       </div>
-      <div className="text-xl font-semibold">
-        {commonName}(<em className="italic">{name}</em>)
-      </div>
-      <div className="text-lg">{type}</div>
-      <div className="">{description}</div>
-      Attracts {attracts}
-      <div hidden>
-        <small>
-          <a href={"http://google.com/search?q=" + name}>Google Search</a>
-        </small>
-      </div>
-    </div>
-  );
+    </a>
+  )
 }
 
 function App() {
-  const [showTable] = useGlobalState("showTable");
-  const [searchTerm] = useGlobalState("searchTerm");
-
+  const [showTable] = useGlobalState('showTable')
+  const [searchTerm] = useGlobalState('searchTerm')
+  const [showAbout, setShowAbout] = useState(false)
+  const filteredItems = () => {
+    return data.filter( (d) => JSON.stringify(d).toLowerCase().indexOf(searchTerm) !== -1)
+  }
   return (
     <div className="mx-auto mt-10  max-w-7xl">
+      {showAbout && (
+        <>
+          <div onClick={() => setShowAbout(false)}>
+            <About></About>
+          </div>
+        </>
+      )}
       <Hero></Hero>
       <div
         className={classNames({
-          "overflow-hidden": !showTable,
-          "h-1": !showTable,
+          'overflow-hidden': !showTable,
+          'h-1': !showTable,
         })}
       >
         <div className={classNames({ invisible: !showTable, x: true })}>
           <SearchBar></SearchBar>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:grid-rows-3 gap-4 ">
-            {data
-              .filter(
-                (d) =>
-                  JSON.stringify(d).toLowerCase().indexOf(searchTerm) !== -1
-              )
-              .map((d) => (
+            {filteredItems().map((d) => (
                 <Card item={d} key={d.index}></Card>
               ))}
           </div>
+          { filteredItems().length === 0 && <div className="text-center p-40">
+            No plants found that match that search term, sorry.
+          </div>}
           {/* {selected && <Card item={selected}></Card>} */}
+        </div>
+        <div class="p-4">
+          <a href="https://www.brisbane.qld.gov.au/clean-and-green/green-home-and-community/sustainable-gardening/free-native-plants-program/participating-nurseries">
+            Participating Nurseries
+          </a>
+          <button onClick={() => setShowAbout(true)} className="float-right">
+            About
+          </button>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
