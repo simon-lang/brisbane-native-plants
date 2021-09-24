@@ -70,6 +70,9 @@ function SearchBar() {
   const onChange = (e) => {
     setSearchTerm(e.target.value);
   };
+  const onChangeFilters = e => {
+    console.log('....')
+  }
   return (
     <div className="SearchBar">
       <div>
@@ -83,6 +86,12 @@ function SearchBar() {
             placeholder="Search plants..."
             onChange={onChange}
           />
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" value="Tufting plants and grasses" onChange={ onChangeFilters } />
+            Tufting plants and grasses
+          </label>
         </div>
       </div>
     </div>
@@ -161,7 +170,7 @@ function App() {
       <Hero></Hero>
       <div className={classNames({ invisible: !showTable })}>
         <SearchBar></SearchBar>
-        <div className="grid grid-cols-3 grid-rows-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:grid-rows-3 gap-4 ">
           {data
             .filter(
               (d) => JSON.stringify(d).toLowerCase().indexOf(searchTerm) !== -1
