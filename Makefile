@@ -1,0 +1,2 @@
+deploy:
+	yarn run deploy
