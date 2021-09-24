@@ -83,7 +83,7 @@ function SearchBar() {
             onChange={onChange}
           />
         </div>
-        <div>
+        <div hidden>
           <label>
             <input type="checkbox" value="Tufting plants and grasses" onChange={ onChangeFilters } />
             Tufting plants and grasses
