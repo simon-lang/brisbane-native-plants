@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/brisbane-native-plants/static/css/main.a77e5a83.chunk.css",
-    "main.js": "/brisbane-native-plants/static/js/main.1da748aa.chunk.js",
-    "main.js.map": "/brisbane-native-plants/static/js/main.1da748aa.chunk.js.map",
+    "main.css": "/brisbane-native-plants/static/css/main.4cead054.chunk.css",
+    "main.js": "/brisbane-native-plants/static/js/main.b74bfc7f.chunk.js",
+    "main.js.map": "/brisbane-native-plants/static/js/main.b74bfc7f.chunk.js.map",
     "runtime-main.js": "/brisbane-native-plants/static/js/runtime-main.e23bfbe1.js",
     "runtime-main.js.map": "/brisbane-native-plants/static/js/runtime-main.e23bfbe1.js.map",
-    "static/js/2.eeee63ee.chunk.js": "/brisbane-native-plants/static/js/2.eeee63ee.chunk.js",
-    "static/js/2.eeee63ee.chunk.js.map": "/brisbane-native-plants/static/js/2.eeee63ee.chunk.js.map",
+    "static/js/2.1ef532b2.chunk.js": "/brisbane-native-plants/static/js/2.1ef532b2.chunk.js",
+    "static/js/2.1ef532b2.chunk.js.map": "/brisbane-native-plants/static/js/2.1ef532b2.chunk.js.map",
     "static/js/3.e2429aa9.chunk.js": "/brisbane-native-plants/static/js/3.e2429aa9.chunk.js",
     "static/js/3.e2429aa9.chunk.js.map": "/brisbane-native-plants/static/js/3.e2429aa9.chunk.js.map",
     "index.html": "/brisbane-native-plants/index.html",
-    "static/css/main.a77e5a83.chunk.css.map": "/brisbane-native-plants/static/css/main.a77e5a83.chunk.css.map",
-    "static/js/2.eeee63ee.chunk.js.LICENSE.txt": "/brisbane-native-plants/static/js/2.eeee63ee.chunk.js.LICENSE.txt"
+    "static/css/main.4cead054.chunk.css.map": "/brisbane-native-plants/static/css/main.4cead054.chunk.css.map",
+    "static/js/2.1ef532b2.chunk.js.LICENSE.txt": "/brisbane-native-plants/static/js/2.1ef532b2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e23bfbe1.js",
-    "static/js/2.eeee63ee.chunk.js",
-    "static/css/main.a77e5a83.chunk.css",
-    "static/js/main.1da748aa.chunk.js"
+    "static/js/2.1ef532b2.chunk.js",
+    "static/css/main.4cead054.chunk.css",
+    "static/js/main.b74bfc7f.chunk.js"
   ]
 }
