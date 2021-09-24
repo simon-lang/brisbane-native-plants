@@ -1,7 +1,7 @@
 // @format
 
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import data from "./data.json";
 import { createGlobalState } from "react-hooks-global-state";
@@ -11,10 +11,6 @@ const initialState = {
   searchTerm: "",
 };
 const { useGlobalState } = createGlobalState(initialState);
-
-const formatType = (type) => {
-  return type.replace(/\-.+$/g, "");
-};
 
 data.forEach((d, i) => {
   d.index = i;
@@ -42,12 +38,12 @@ function Hero() {
           {!showTable && (
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
-                <a
+                <button
                   onClick={() => setShowTable(true)}
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10"
                 >
                   Find a plant
-                </a>
+                </button>
               </div>
               <div class="mt-3 sm:mt-0 sm:ml-3">
                 <a
@@ -66,7 +62,7 @@ function Hero() {
 }
 
 function SearchBar() {
-  const [searchTerm, setSearchTerm] = useGlobalState("searchTerm");
+  const [, setSearchTerm] = useGlobalState("searchTerm");
   const onChange = (e) => {
     setSearchTerm(e.target.value);
   };
@@ -105,6 +101,7 @@ function Card(props) {
       <div className="overflow-y-hidden" style={{ height: "16rem" }}>
         <img
           src={process.env.PUBLIC_URL + "/images/plants/" + index + ".jpg"}
+          alt={name}
         />
       </div>
       <div className="text-xl font-semibold">
@@ -122,49 +119,10 @@ function Card(props) {
   );
 }
 
-function Table() {
-  return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Name</th>
-            <th>Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data
-            .map((d) => {
-              const className = classNames({
-                link: true,
-                "cursor-pointer": true,
-                "hover:bg-green-500 hover:bg-opacity-10": true,
-                // "bg-green-500 bg-opacity-25": selected && selected.index === d.index,
-              });
-              return (
-                <tr className={className}>
-                  <td>{formatType(d.type)}</td>
-                  <td>{d.name}</td>
-                  <td>{d.commonName}</td>
-                </tr>
-              );
-            })}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
 function App() {
-  const [selected, setSelected] = useState(null);
-  const [showTable, setShowTable] = useGlobalState("showTable");
-  const [searchTerm, setSearchTerm] = useGlobalState("searchTerm");
+  const [showTable] = useGlobalState("showTable");
+  const [searchTerm] = useGlobalState("searchTerm");
 
-  const clickPlant = (d) => {
-    console.log(d);
-    setSelected(d);
-  };
   return (
     <div className="mx-auto mt-10  max-w-7xl">
       <Hero></Hero>
