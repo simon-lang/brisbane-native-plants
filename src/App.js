@@ -10,7 +10,7 @@ import About from './About'
 // import WorkIcon from '@mui/icons-material/Work'
 
 const initialState = {
-  showTable: false,
+  showTable: true,
   searchTerm: '',
 }
 const { useGlobalState } = createGlobalState(initialState)
@@ -158,7 +158,9 @@ function App() {
   const [searchTerm] = useGlobalState('searchTerm')
   const [showAbout, setShowAbout] = useState(false)
   const filteredItems = () => {
-    return data.filter( (d) => JSON.stringify(d).toLowerCase().indexOf(searchTerm) !== -1)
+    return data.filter(
+      (d) => JSON.stringify(d).toLowerCase().indexOf(searchTerm) !== -1
+    )
   }
   return (
     <div className="mx-auto mt-10  max-w-7xl">
@@ -180,12 +182,14 @@ function App() {
           <SearchBar></SearchBar>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 lg:grid-rows-3 gap-4 ">
             {filteredItems().map((d) => (
-                <Card item={d} key={d.index}></Card>
-              ))}
+              <Card item={d} key={d.index}></Card>
+            ))}
           </div>
-          { filteredItems().length === 0 && <div className="text-center p-40">
-            No plants found that match that search term, sorry.
-          </div>}
+          {filteredItems().length === 0 && (
+            <div className="text-center p-40">
+              No plants found that match that search term, sorry.
+            </div>
+          )}
           {/* {selected && <Card item={selected}></Card>} */}
         </div>
         <div class="p-4">
